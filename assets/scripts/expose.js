@@ -21,7 +21,7 @@ function init() {
       : "assets/images/no-image.png";
   });
 
-  slider.addEventListener('change', () => {
+  slider.addEventListener('input', () => {
     let range_val = slider.querySelector('#volume').value;
     let vol_img = slider.querySelector("img");
     
