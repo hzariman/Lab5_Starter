@@ -9,7 +9,6 @@ function init() {
   let play_button = document.querySelector("button");
   let face_img = document.querySelector("img");
 
-
   addEventListener('load', ()=> {
     let voices = synth.getVoices();
     for (let i = 0; i < voices.length; i++) {
@@ -17,8 +16,6 @@ function init() {
       option.text = `${voices[i].name} (${voices[i].lang})`;
       select_voice.add(option);
     };
-
-  
   })
 
   play_button.addEventListener('click', () => {
@@ -40,7 +37,5 @@ function init() {
     dictate.addEventListener('end', () => {
       face_img.src = "assets/images/smiling.png";
     });
-
   })
-
 }
